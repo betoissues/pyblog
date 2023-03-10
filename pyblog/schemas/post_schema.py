@@ -6,12 +6,11 @@ class PostBase(BaseModel):
 
 
 class PostCreate(PostBase):
-    pass
+    user_id: int
 
 
 class PostSchema(PostBase):
     id: int
-    user_id: int
 
     class Config:
         orm_mode = True
