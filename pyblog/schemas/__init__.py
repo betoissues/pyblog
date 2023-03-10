@@ -1,5 +1,5 @@
-from .post_schema import PostCreate, PostSchema
-from .user_schema import UserCreate, UserSchema
+from .post import PostCreate, PostSchema
+from .user import UserCreate, UserSchema
 
 __all__ = [
         "PostCreate",

@@ -1,5 +1,5 @@
 from pydantic import BaseModel
-from pyblog.schemas.post_schema import PostSchema
+from pyblog.schemas import PostSchema
 
 
 class UserBase(BaseModel):
@@ -8,7 +8,7 @@ class UserBase(BaseModel):
 
 
 class UserCreate(UserBase):
-    pass
+    password: str
 
 
 class UserSchema(UserBase):
